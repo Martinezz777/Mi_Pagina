@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para soportar acentos y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la página se adapte a dispositivos móviles -->
+    <title>Carrito - MARTINEZZ</title> <!-- Título de la página que se mostrará en la pestaña del navegador -->
+    <link rel="stylesheet" href="Hoja de estilo4.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de compras</h1>  <!-- Encabezado de la página -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>  <!-- Enlace a la página principal -->
+                <li><a href="productos.html">Productos</a></li>  <!-- Enlace a la sección de productos -->
+                <li><a href="carrito.html">Carrito</a></li>  <!-- Enlace al carrito de compras -->
+                <li><a href="contacto.html">Contacto</a></li>  <!-- Enlace a la página de contacto -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Formulario que enviará los datos del carrito a 'procesar_compra.html' cuando el usuario lo envíe -->
+    <form action="procesar_compra.html" method="post"> 
+
+        <!-- Tabla para organizar la información de los productos -->
+        <table border="2"> <!-- Crea una tabla con un borde de 1 píxel -->
+            <tr> <!-- Fila de encabezados de la tabla -->
+                <th>Producto</th> <!-- Columna para el nombre del producto -->
+                <th>Precio</th> <!-- Columna para el precio del producto -->
+                <th>Cantidad</th> <!-- Columna para la cantidad seleccionada -->
+                <th>Talla</th> <!-- Columna  para elegir talla -->
+            </tr>
+
+            <!-- Primera fila del carrito (Camiseta Negra) -->
+            <tr>
+                <td>Camiseta Negra</td> <!-- Nombre del producto -->
+                <td>$20000</td> <!-- Precio del producto -->
+                <td>
+                    <!-- Campo de entrada numérica para seleccionar la cantidad de camisetas -->
+                    <input type="number" name="cantidad_camiseta" value="1" min="1">
+                </td>
+                 <td>
+                    <!--Campo para elegir talla-->
+                    <select name="talla" required>
+                        <option value="" disabled selected>Selecciona</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </td>
+        
+            </tr>
+
+            <!-- Segunda fila del carrito (Pantalón Jeans) -->
+            <tr>
+                <td>Pantalón Jeans</td> <!-- Nombre del producto -->
+                <td>$35</td> <!-- Precio del producto -->
+                <td>
+                    <!-- Campo de entrada numérica para seleccionar la cantidad de pantalones -->
+                    <input type="number" name="cantidad_pantalon" value="1" min="1">
+                </td>
+                <td>
+                    <!--Campo para elegir talla-->
+                    <select name="talla" required>
+                        <option value="" disabled selected>Selecciona</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                        <option value="32">32</option>
+                        <option value="34">34</option>
+                        <option value="36">36</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <br> <!-- Salto de línea para separar la tabla del botón de compra -->
+        
+        <!-- Botón para enviar el formulario y finalizar la compra -->
+       <!-- 🔹 Explicación:
+        •	background-color: green; → Color de fondo verde.
+        •	color: white; → Texto en color blanco.
+        •	padding: 10px; → Espaciado interno para que el botón sea más grande.
+        •	border: none; → Elimina el borde predeterminado.
+        •	cursor: pointer; → Cambia el cursor a una mano al pasar sobre el botón.-->
+        <input type="submit" value="Finalizar Compra" style="background-color: green; color: white; padding: 20px; border: none; cursor: pointer;">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* ----- CONFIGURACIÓN GENERAL ----- */
+
+/* Reset general para quitar márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #f2f2f2; /* Texto claro */
+    padding: 20px;
+}
+
+/* ----- ENCABEZADO ----- */
+header {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Degradado naranja/rosado */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #feb47b;
+}
+
+/* ----- SECCIÓN PRINCIPAL ----- */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+section h2, section h3 {
+    color: #ff7e5f;
+    margin: 30px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Lista de categorías */
+section ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+section ul li a {
+    color: #feb47b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #ff7e5f;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+section ul li a:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* ----- CONTENEDOR DE PRODUCTOS ----- */
+
+/* Se aplica a cada grupo de productos */
+section h3 + div {
+    display: flex; /* Hace que los productos estén en fila */
+    flex-wrap: wrap; /* Permite que pasen a otra línea si no caben */
+    gap: 20px; /* Espacio entre productos */
+    justify-content: center; /* Centra los productos */
+    margin-bottom: 40px;
+}
+
+/* Cada producto */
+.producto {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.producto p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #feb47b;
+}
+
+/* Botón */
+.producto button {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #feb47b;
+}
+
+/* ----- PIE DE PÁGINA ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    border-radius: 10px;
+    color: #222;
+}

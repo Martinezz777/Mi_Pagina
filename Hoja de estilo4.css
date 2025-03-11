@@ -1,0 +1,108 @@
+/* Establecemos un fondo suave y un estilo general */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente legible y moderna */
+    background-color: #0c0c0c; /* Color de fondo claro */
+}
+
+/* Estilo para el encabezado */
+header {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Degradado naranja/rosado */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Título del carrito */
+header h1 {
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navegación principal */
+nav ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center; /* Centramos los enlaces */
+}
+
+/* Estilo de los enlaces del menú */
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitamos el subrayado */
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Fondo gris al pasar el cursor */
+    border-radius: 5px;
+}
+
+/* Estilo para la tabla del carrito */
+table {
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    max-width: 800px; /* Pero no más allá de 800px */
+    margin: 30px auto; /* Centrada */
+    border-collapse: collapse; /* Bordes unidos */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #222; /* Fondo oscuro */
+    color: #feb47b;; /*  Color delTexto  */
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Celdas normales */
+td {
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+}
+
+/* Última fila sin línea inferior */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Campos de número y selección */
+input[type="number"],
+select {
+    padding: 8px;
+    font-size: 16px;
+    width: 80px;
+}
+
+/* Botón de Finalizar Compra */
+input[type="submit"] {
+    display: block; /* Que ocupe su propia línea */
+    margin: 30px auto; /* Centrado */
+    padding: 15px 30px;
+    background-color: #28a745; /* Verde vibrante */
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto hover para el botón */
+input[type="submit"]:hover {
+    background-color: #218838; /* Verde un poco más oscuro */
+}
